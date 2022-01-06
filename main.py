@@ -6,7 +6,7 @@ from bad_words import BadWords
 
 
 def main():
-
+    TOKEN = 'OTI4MzkyNDQzODQ4Njg3NjU3.YdYG1w._fCS3JH--a_yeSTO0iQdhNKPL84'
     intents = discord.Intents.all()
     client = commands.Bot(intents=intents, help_command=None)
     bad_words = BadWords()
@@ -23,7 +23,7 @@ def main():
             await message.channel.send(f'{message.author.mention} Wortwahl!!')
 
 
-    client.run(os.environ['TOKEN'])
+    client.run(TOKEN)
 
 if __name__ == '__main__':
     main()
