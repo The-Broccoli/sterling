@@ -22,8 +22,8 @@ def main():
             await message.add_reaction('\U0001F6AB')
             await message.channel.send(f'{message.author.mention} Wortwahl!!')
 
+    client.run(TOKEN)
 
-    client.run(os.environ['TOKEN'])
 
 if __name__ == '__main__':
     main()
