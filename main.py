@@ -6,7 +6,7 @@ from bad_words import BadWords
 
 
 def main():
-
+    TOKEN = ''
     intents = discord.Intents.all()
     client = commands.Bot(intents=intents, help_command=None)
     bad_words = BadWords()
