@@ -1,2 +1,2 @@
 #!/bin/sh
-python3 main.py
+screen -A -m -d -L -S discordbot python3 main.py
